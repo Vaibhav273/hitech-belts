@@ -23,7 +23,6 @@ function Header() {
                                 <Nav.Link as={NavLink} to={"/home"} className="nav-link">Home</Nav.Link >
                                 <Nav.Link as={NavLink} to={"/about-us"} className="nav-link">About Us</Nav.Link >
                                 <Nav.Link as={NavLink} to={"/products"} className="nav-link">Products</Nav.Link >
-                                <Nav.Link as={NavLink} to={"/services"} className="nav-link">Services</Nav.Link >
                                 <Nav.Link as={NavLink} to={"/gallery"} className="nav-link">Gallery</Nav.Link >
                                 <Nav.Link as={NavLink} to={"/contact"} className="nav-link contact-button">Contact</Nav.Link >
                             </Nav>

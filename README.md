@@ -1,1 +1,1 @@
-# hitech-belts
+# The corporate associate

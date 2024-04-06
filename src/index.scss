@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// @import "../node_modules/slick-carousel/slick/slick.scss";
+// @import "../node_modules/slick-carousel/slick/slick-theme.scss";
+
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+
+@import "./assets/scss/variable";
+@import "./assets/scss/component/header";
+@import "./assets/scss/component/footer";
+@import "./assets/scss/component/loader";
+@import "./assets/scss/pages/home";
+@import "./assets/scss/component/breadcrumb";
+@import "./assets/scss/pages/about";
+@import "./assets/scss/pages/product";
+@import "./assets/scss/pages/services";
+@import "./assets/scss/pages/contact";
+
+.product-section {
+  .slick-slide {
+    padding: 6rem 1.2rem 1.2rem;
+  }
+}
+
+strong {
+  font-family: $fontRaleway;
+  font-weight: 900;
+}
+
+@import "./assets/scss/responsive";

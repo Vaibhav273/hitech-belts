@@ -1,69 +1,69 @@
-.navbar {
-  padding: 0;
-  position: relative;
+.top-header {
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, $primaryColor 50%, $secondryColor 75%) 5;
 
-  .navbar-brand {
-    img {
-      position: absolute;
-      width: 230px;
-      background-color: $white;
-      top: 0;
-      z-index: 1;
-      border-radius: 1rem;
-      padding: 15px;
-    }
-  }
-
-  .nav-link {
-    margin: 0 0.2rem;
-    padding: 1rem 1.7rem !important;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-
-    &:hover {
-      color: $primaryColor;
+    .logo {
+        padding: 0.5rem 15px;
+        img {
+            width: 100px;
+        }
     }
 
-    &.active {
-      color: $primaryColor;
+    .text {
+        text-align: end;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: end;
+
+        div {
+            font-family: $fontMontserrat;
+            font-size: 0.9rem;
+
+            &.border-custom{
+                border-right: 1px solid $primaryColor;
+            }
+
+            svg{
+                font-size: 2rem;
+                margin-right: 1rem;
+                color: $secondryColor;
+            }
+
+            a {
+                text-decoration: none;
+                color: $primaryColor;
+                font-weight: 800;
+            }
+
+            span{
+                color: $primaryColor;
+                font-weight: 800;
+            }
+        }
     }
 
-    &.contact-button {
-      margin-right: 0;
-      background-color: $primaryColor;
-      color: $white;
+    .navbar{
+        background-color: $primaryColor;
+        padding: 0;
+
+
+        .nav-link{
+            color: $secondryColor;
+            font-family: $fontMontserrat;
+            text-transform: uppercase;
+            margin: 0 0.5rem;
+            padding: 0.4rem 1.5rem;
+
+            &.active{
+                background-color: $secondryColor;
+                color: $primaryColor;
+            }
+
+            &:hover{
+                background-color: $secondryColor;
+                color: $primaryColor;
+            }
+        }
     }
-  }
-}
-
-.border-top-header {
-  border-bottom: 1px solid $primaryColor;
-}
-
-.top-header-contact {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-
-  p {
-    margin-bottom: 0;
-    font-weight: 700;
-
-    a {
-      color: $primaryColor;
-      margin-right: 0.2rem;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    span {
-      color: $primaryColor;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }

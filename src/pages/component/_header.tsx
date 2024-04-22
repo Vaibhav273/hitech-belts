@@ -1,35 +1,55 @@
-import { Col, Container, Image, Nav, Navbar } from "react-bootstrap";
+import { Col, Container, Image, Nav, Navbar, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import siteLogo from "../../assets/images/logo.png";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaSquarePhone } from "react-icons/fa6";
 
 function Header() {
     return (
         <>
-            <div className="border-top-header">
-                <Col xl={{ span: 10, offset: 1 }} className="top-header-contact">
-                    <p>E-mail : <a href="mailto:info@tcahindustan.in">info@tcahindustan.in</a>, <a href="mailto:sales@tcahindustan.in">sales@tcahindustan.in</a></p>
-                    <p>Contact : <span>079877-83321</span>, <span>099771-33321</span></p>
-                </Col>
-            </div>
-            <Col md={{ span: 10, offset: 1 }}>
-                <Navbar expand="xl">
-                    <Container fluid className="px-0">
-                        <Navbar.Brand href="#">
+            <div className="top-header">
+                <Container>
+                    <Row>
+                        <Col className="logo">
                             <Image src={siteLogo} className="img-fluid" alt="Logo" />
-                        </Navbar.Brand>
+                        </Col>
+                        <Col className="text">
+                            <div className="d-flex align-items-center me-3 p-1">
+                                <div className="d-flex flex-column border-custom">
+                                    <MdAlternateEmail />
+                                </div>
+                                <div className="d-flex flex-column ps-3">
+                                    <div><a href="mailto:info@tcahindustan.in">info@tcahindustan.in</a></div>
+                                    <div><a href="mailto:sales@tcahindustan.in">sales@tcahindustan.in</a></div>
+                                </div>
+                            </div>
+                            <div className="d-flex align-items-center p-1">
+                                <div className="d-flex flex-column border-custom">
+                                    <FaSquarePhone />
+                                </div>
+                                <div className="d-flex flex-column ps-3">
+                                    <span>079877-83321</span>
+                                    <span>099771-33321</span>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+                <Navbar expand="xl">
+                    <Container className="px-0">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ms-auto">
-                                <Nav.Link as={NavLink} to={"/home"} className="nav-link">Home</Nav.Link >
-                                <Nav.Link as={NavLink} to={"/about-us"} className="nav-link">About Us</Nav.Link >
-                                <Nav.Link as={NavLink} to={"/products"} className="nav-link">Products</Nav.Link >
-                                <Nav.Link as={NavLink} to={"/gallery"} className="nav-link">Gallery</Nav.Link >
-                                <Nav.Link as={NavLink} to={"/contact"} className="nav-link contact-button">Contact</Nav.Link >
+                            <Nav className="mx-auto">
+                                <Nav.Link as={NavLink} to={"/"}>Home</Nav.Link >
+                                <Nav.Link as={NavLink} to={"/about-us"}>About Us</Nav.Link >
+                                <Nav.Link as={NavLink} to={"/products"}>Products</Nav.Link >
+                                <Nav.Link as={NavLink} to={"/gallery"}>Gallery</Nav.Link >
+                                <Nav.Link as={NavLink} to={"/contact"} className="contact-button">Contact</Nav.Link >
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-            </Col>
+            </div>
         </>
     );
 }

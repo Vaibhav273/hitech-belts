@@ -16,20 +16,5 @@ html {
 @import "./assets/scss/component/loader";
 @import "./assets/scss/pages/home";
 @import "./assets/scss/component/breadcrumb";
-@import "./assets/scss/pages/about";
-@import "./assets/scss/pages/product";
-@import "./assets/scss/pages/services";
-@import "./assets/scss/pages/contact";
-
-.product-section {
-  .slick-slide {
-    padding: 6rem 1.2rem 1.2rem;
-  }
-}
-
-strong {
-  font-family: $fontRaleway;
-  font-weight: 900;
-}
 
 @import "./assets/scss/responsive";
